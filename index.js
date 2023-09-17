@@ -1,4 +1,5 @@
-const Port=3000
+const Port=3000|| process.env.Port
+require('dotenv').config();
 const express=require('express')
 const bodyParser=require('body-parser')
 const app=express();

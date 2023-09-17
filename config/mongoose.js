@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-mongoose.connect('mongodb+srv://Arti123:Pass123@cluster0.io4zqt7.mongodb.net/?retryWrites=true&w=majority');
+mongoose.connect(process.env.DB);
 
 // Code for using the cloud mongodb atlas 
 const connectParams={
